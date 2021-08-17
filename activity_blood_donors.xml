@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".activities.BloodDonorsActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/search_doners"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/background_edit_text"
+            android:drawableStart="@drawable/ic_search_black_24dp"
+            android:fontFamily="@font/gothicb"
+            android:gravity="center"
+            android:hint="@string/what_blood_type_you_need"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/text_color" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_donors"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_doners"
+            android:scrollbars="vertical"
+            tools:itemCount="10"
+            tools:layoutManager="android.support.v7.widget.GridLayoutManager"
+            tools:listitem="@layout/item_donors_requests"
+            tools:orientation="vertical"
+            tools:spanCount="1" />
+
+    </RelativeLayout>
+
+</LinearLayout>

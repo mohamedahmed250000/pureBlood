@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_signup"
+    tools:context=".activities.SignUpActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fillViewport="true"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sign_up_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/gothicb"
+                android:text="@string/sign_up"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/text_color"
+                android:textSize="42sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/background_data"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:id="@+id/container1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="128dp"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/gothicb"
+                        android:gravity="center"
+                        android:text="@string/name"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/text_color" />
+
+                    <TextView
+                        android:layout_width="128dp"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/gothicb"
+                        android:gravity="center"
+                        android:text="@string/email"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/text_color" />
+
+                    <TextView
+                        android:layout_width="128dp"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/gothicb"
+                        android:gravity="center"
+                        android:text="@string/password"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/text_color" />
+
+                    <TextView
+                        android:layout_width="128dp"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/gothicb"
+                        android:gravity="center"
+                        android:text="@string/birthday"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/text_color" />
+
+                    <TextView
+                        android:layout_width="128dp"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/gothicb"
+                        android:gravity="center"
+                        android:text="@string/blood_type"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/text_color" />
+
+                    <TextView
+                        android:layout_width="128dp"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/gothicb"
+                        android:gravity="center"
+                        android:text="@string/city"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/text_color" />
+
+                    <TextView
+                        android:layout_width="128dp"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/gothicb"
+                        android:gravity="center"
+                        android:text="@string/address"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/text_color" />
+
+                    <TextView
+                        android:layout_width="128dp"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/gothicb"
+                        android:gravity="center"
+                        android:text="@string/phone"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/text_color" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/container2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/container1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/name_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/background_edit_text"
+                        android:fontFamily="@font/gothicb"
+                        android:gravity="center"
+                        android:hint="@string/name"
+                        android:inputType="textPersonName|textCapWords"
+                        android:maxLength="15"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/text_color" />
+
+                    <EditText
+                        android:id="@+id/email_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/background_edit_text"
+                        android:fontFamily="@font/gothicb"
+                        android:gravity="center"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/text_color" />
+
+                    <EditText
+                        android:id="@+id/password_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/background_edit_text"
+                        android:fontFamily="@font/gothicb"
+                        android:gravity="center"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/text_color" />
+
+                    <EditText
+                        android:id="@+id/birthday_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/background_edit_text"
+                        android:fontFamily="@font/gothicb"
+                        android:gravity="center"
+                        android:hint="@string/birthday"
+                        android:inputType="date"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/text_color" />
+
+                    <EditText
+                        android:id="@+id/blood_type_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/background_edit_text"
+                        android:fontFamily="@font/gothicb"
+                        android:gravity="center"
+                        android:hint="@string/blood_type"
+                        android:inputType="text|textCapWords"
+                        android:maxLength="3"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/text_color" />
+
+                    <EditText
+                        android:id="@+id/city_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/background_edit_text"
+                        android:fontFamily="@font/gothicb"
+                        android:gravity="center"
+                        android:hint="@string/city"
+                        android:inputType="textPostalAddress|textCapWords"
+                        android:maxLength="20"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/text_color" />
+
+                    <EditText
+                        android:id="@+id/address_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/background_edit_text"
+                        android:fontFamily="@font/gothicb"
+                        android:gravity="center"
+                        android:hint="@string/address"
+                        android:inputType="textPostalAddress|textCapWords"
+                        android:maxLength="20"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/text_color" />
+
+                    <EditText
+                        android:id="@+id/phone_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/background_edit_text"
+                        android:fontFamily="@font/gothicb"
+                        android:gravity="center"
+                        android:hint="@string/phone"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/text_color" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ic_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/container1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/ic_ok"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ic_ok" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/pure_blood_logo"
+                android:layout_width="160dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_margin="1dp"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:contentDescription="@string/content_description_tip"
+        android:id="@+id/image_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tips01" />
+
+    <View
+        android:id="@+id/view_tips"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="bottom"
+        android:alpha="0.8"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/question_tips"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@android:color/white"
+        tools:text="Question" />
+
+</FrameLayout>

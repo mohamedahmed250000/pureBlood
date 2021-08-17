@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    tools:context=".activities.LoginActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fillViewport="true"
+        android:paddingStart="48dp"
+        android:paddingEnd="48dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="160dp"
+                android:layout_height="96dp"
+                android:contentDescription="@string/splash_screen_logo"
+                android:src="@drawable/logo" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="64dp" />
+
+            <EditText
+                android:id="@+id/username_login"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/background_edit_text"
+                android:drawableStart="@drawable/ic_user_name"
+                android:fontFamily="@font/gothicb"
+                android:gravity="center"
+                android:hint="@string/username"
+                android:inputType="textEmailAddress"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/text_color" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+            <EditText
+                android:id="@+id/password_login"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/background_edit_text"
+                android:drawableStart="@drawable/ic_password"
+                android:fontFamily="@font/gothicb"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColorHint="@color/text_color" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/forget_pass_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/gothic"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/forget_password"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/signup_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/gothic"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/sign_up"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="64dp" />
+
+            <Button
+                android:id="@+id/signin_login"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/background_button"
+                android:fontFamily="@font/gothicb"
+                android:text="@string/sign_in"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>
